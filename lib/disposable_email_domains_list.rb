@@ -16,7 +16,7 @@ module DisposableEmailDomainList
     private
 
     def domains_file
-      File.expand_path('../data/domains.json', __dir__)
+      File.expand_path('../domains.json', __dir__)
     end
   end
 end
