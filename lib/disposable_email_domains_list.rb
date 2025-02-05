@@ -5,8 +5,8 @@ require_relative "disposable_email_domains/version"
 
 module DisposableEmailDomainList
   class << self
-    def domains
-      @domains ||= JSON.parse(File.read(domains_file))
+    def domains_file
+      File.join(__dir__, 'disposable_email_domains', 'domains.json')
     end
 
     def disposable?(domain)
