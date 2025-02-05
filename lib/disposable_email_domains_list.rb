@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'json'
-require_relative "disposable_email_domain_list/version"
+require_relative "disposable_email_domains/version"
 
 module DisposableEmailDomainList
   class << self
